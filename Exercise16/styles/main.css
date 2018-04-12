@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 900px;
+    margin: 20px auto;
+}
+
+section {
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding-top:20px;
+}
+
+section>h2,
+section>p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section>ol {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+section>section {
+    border: 1px solid #e1e1e8;
+    background-color: #f7f7f9;
+    overflow: hidden;
+    padding:10px;
+    margin:0;
+}
+
+section>aside {
+    float: right;
+    width: 33%;
+}
+section > section > div{
+    float:left;
+    width:33%;
+}
+.part3{
+    display:none;
+}
+
+/* hyperlink with a target color: blue */
+a[target]{
+  color:blue;
+}
+/* type of text to set background-color pink */
+input[type="text"]{
+  background-color: pink;
+}
+
+/* a type of checkbox should have their background-color */
+
+/* ----------------no code for above---------- */
+
+/* href that starts with https */
+a[href^="http:"] {
+  cursor: default;
+}
+/* ----------------above doesnt work---------- */
+
+/* href that ends with .edu  */
+a[href$=".edu"]{
+  cursor: default;
+}
+/* href that contains mart  */
+[href*="mart"] {
+  cursor: default;
+}
+
+
+/* couldnt do these::after
+Any inputs that have a type of checkbox should have their background-color set to yellow
+Any hyperlink with a href that starts with https should have a 'default' cursor
+Any hyperlink with a href that ends with .edu should have a 'default' cursor
+Any hyperlink with a href that contains mart should have a 'default' cursor */
